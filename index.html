@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Филимонов Веб ЛР1 </title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+  <script defer src="js/formAndEvent.js"></script>
+  <script defer src="js/canvas.js"></script>
+</head>
+<body>  
+
+  <header class="page-header">
+    <h1>Филимонов Никита Данилович P3215 Вариант 22266</p>
+  </header>
+
+  <main class="page-main">
+
+    <section class="canvas-block">
+      <h2>Область на координатной плоскости</h2>
+      <canvas id="graph" width="500" height="500"></canvas>
+    </section>
+
+    <section class="odz-block">
+      <h2>Область допустимых значений</h2>
+      <p>X: от -4 до 4 (выбор из списка)</p>
+      <p>Y: от -3 до 3 (текстовое поле)</p>
+      <p>R: от 1 до 5 (радиокнопки)</p>
+    </section>
+
+    <section class="form-block">
+      <h2>Ввод параметров точки</h2>
+      <form id="point-form">  
+
+        <div class="form-group">
+          <label for="x">X:</label>
+          <select id="x" name="x">
+            <option value="-4">-4</option>
+            <option value="-3">-3</option>
+            <option value="-2">-2</option>
+            <option value="-1">-1</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="y">Y:</label>
+          <input type="text" id="y" name="y" placeholder="-3 ... 3">
+        </div>
+
+        <div class="form-group">
+          <span class="label-text">R:</span>
+          <label><input type="radio" name="r" value="1"> 1</label>
+          <label><input type="radio" name="r" value="2"> 2</label>
+          <label><input type="radio" name="r" value="3"> 3</label>
+          <label><input type="radio" name="r" value="4"> 4</label>
+          <label><input type="radio" name="r" value="5"> 5</label>
+        </div>
+
+        <button type="submit">Проверить</button>
+      </form>
+    </section>
+
+    <section class="results-block">
+      <h2>Результаты проверок</h2>
+      <table id="results-table">
+        <thead>
+          <tr>
+            <th>X</th>
+            <th>Y</th>
+            <th>R</th>
+            <th>Результат</th>
+            <th>Дата и время</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <button type="button" id="clear-btn">Очистить результаты</button>
+    </section>
+
+    <footer class="page-footer">
+    <p>
+      <a href="exemple.html">CSS примеры</a>
+    </p>
+    </footer>
+
+  </main>
+</body>
+</html>

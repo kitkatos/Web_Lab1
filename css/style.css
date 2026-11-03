@@ -1,0 +1,44 @@
+/* html {
+  background-image:url("../src/zebra.jpg");
+  background-size:contain;
+  background-position: center;
+  background-repeat: repeat;
+}
+  */
+
+body {
+  font-family: Arial, monospace;
+  font-size: 24 px;
+  color: black;
+  margin: 1%;
+}
+
+header {
+  font-family: Areial, sans-serif;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+}
+
+/* селектор класса*/
+.error-message {
+  background-color: red;
+}
+/*селектор id*/
+#x {
+  padding: 2%;
+}
+/*селектор потомка*/
+.form-group label {
+  background-color: lightblue;
+}
+/*селектор псевдокласса*/
+table:hover {
+  border-color: black;
+  border-width: 3px;
+  border-style: solid;
+}
